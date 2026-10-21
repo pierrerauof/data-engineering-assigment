@@ -1,0 +1,10 @@
+
+services:
+  notebook:
+    build: .
+    container_name: lab3_notebook
+    ports:
+      - "8888:8888"
+    volumes:
+      - .:/app
+    working_dir: /app
